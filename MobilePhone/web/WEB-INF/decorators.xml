@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<decorators defaultdir="/sitemesh/">
+    <!-- 先定义不过滤的页面，即排除页面 -->
+    <excludes>
+        <pattern>/assets/*</pattern>
+    </excludes>
+
+    <!-- 定义需要修饰的页面 -->
+    <decorator name="phone" page="phone_decorate.jsp">
+        <pattern>/phone/*</pattern>
+    </decorator>
+
+</decorators>
